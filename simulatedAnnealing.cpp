@@ -120,7 +120,7 @@ int main() {
             temp *= alpha;
             if(cnt % 50000 > 0 && cnt % 50000 < 50) cerr << cnt << ' ' << temp << ' ' << fs << '\n';
         }
-        if(fs < 1.13) continue;
+        if(fs < 1.12) continue;
         freopen("MTR_record.txt", "a", stdout);
         time_t now = time(0);
         char* dt = ctime(&now);
