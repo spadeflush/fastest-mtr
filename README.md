@@ -1,3 +1,6 @@
+This project has been forked from [spadeflush/fastest-mtr](https://github.com/spadeflush/fastest-mtr). Full credits to him.
+The only update is the addition of station 98 EXC Exhibition Centre.
+
 # fastest-mtr
 This pages contains info for our attempt to tour all Hong Kong MTR stations in the shortest time. 
 
