@@ -1,7 +1,7 @@
 # fastest-mtr
-This pages contains info for our attempt to tour all Hong Kong MTR stations in the shortest time. 
+This page contains info for our attempt to tour all Hong Kong MTR stations in the shortest time. 
 
-In our model, the MTR map is modelled as a weighted graph. Each vertex represents an MTR station, while each edge represents the minimum time between the pair of stations. To implement this, the travelling times between each pair of adjacent stations was first collected. Afterwards, other modes of public transport which would greatly improve our result were considered, such as buses from Tsuen Wan to Tsuen Wan West or a minibus from University to Wu Kai Sha. The graph is directional and asymmetrical due to the unequal times when travelling in either direction for these modes of transport. Finally, with a complete graph precomputed, a simulated annealing-based travelling salesman algorithm was run. The fastest few routes were considered, and we ultimately settled on the following:
+We model the MTR map as a weighted graph. Each MTR station is a vertex, while the minimum time between two stations is an edge. To implement this, we first collected the travelling times between each pair of adjacent stations. Afterwards, we took into account other modes of public transport that could potentially improve our results, such as a bus from Tsuen Wan to Tsuen Wan West or a minibus from University to Wu Kai Sha. The graph is directional and asymmetrical because travel times are direction-dependent for these modes of transport. Once we precomputed the complete graph, we ran a simulated annealing-based travelling salesman algorithm to find the fastest routes. We ultimately settled on the following:
 
 ![Proposed route](https://i.imgur.com/mpwUVSR.png)
 
